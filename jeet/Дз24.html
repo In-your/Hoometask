@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #9ad3bc;
+            color: black;
+        }
+
+        /* На экранах шириной 992 пикселя или меньше цвет фона #9d0191. */
+        @media screen and (max-width: 992px) {
+            body {  background-color: #9d0191;
+            }
+        }
+
+        /* На экранах шириной 600 пикселей или меньше цвет фона #ffa45b. */
+        @media screen and (min-width: 600px) and (max-width: 991) {
+            body { 
+                background-color: #ffa45b;
+                width: 100px;
+                height: 100px;
+            margin: 5px 5px 5px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Измените размер окна браузера, чтобы увидеть эффект!</h1>
+    <p>По умолчанию цвет фона #9ad3bc. Если размер экрана 992px или меньше, то цвет поменяется на #9d0191. Если 600
+        пикселей или меньше, то цвет фона #ffa45b.</p>
+</body>
+
+</html>
